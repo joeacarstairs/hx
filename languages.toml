@@ -1,0 +1,87 @@
+[language-server.angular]
+command = "ngserver"
+args = [
+  "--tsProbeLocations",
+  "$(node -g root)",
+  "--ngProbeLocations",
+  "C:/Program Files/nodejs/node_modules",
+  "--stdio",
+]
+
+[language-server.astro]
+command = "astro-ls"
+args = [ "--stdio" ]
+
+[language-server.astro.config]
+typescript = { tsdk = "C:/Program Files/nodejs/node_modules/typescript/lib" }
+environment = "node" 
+
+# [language-server.eslint]
+# command = "vscode-eslint-language-server"
+# args = ["--stdio"]
+
+[[language]]
+name = "astro"
+language-servers = [ "astro" ]
+auto-format = false
+
+[[language]]
+name = "css"
+auto-format = false
+
+[[language]]
+name = "javascript"
+language-servers = [
+  { name = "typescript-language-server", except-features = [ "format" ] },
+  "biome",
+]
+auto-format = false
+
+[[language]]
+name = "toml"
+formatter = { command = "taplo", args = [ "fmt", "-" ] }
+
+[[language]]
+name = "typescript"
+formatter = { command = "prettier", args = [
+    "--parser",
+    "typescript",
+] }
+language-servers = [
+  "angular",
+  "biome",
+  { name = "typescript-language-server", except-features = [ "format" ] },
+]
+auto-format = false
+
+[[language]]
+name = "tsx"
+auto-format = false
+language-servers = [
+  "biome",
+  { name = "typescript-language-server", except-features = [ "format" ] },
+]
+
+[[language]]
+name = "jsx"
+auto-format = false
+language-servers = [
+  "biome",
+  { name = "typescript-language-server", except-features = [ "format" ] },
+]
+
+[[language]]
+name = "json"
+language-servers = [
+  "biome",
+  { name = "vscode-json-language-server", except-features = [ "format" ] },
+]
+
+[[language]]
+name = "html"
+formatter = { command = 'prettier', args = ["--write", "--parser", "html"] }
+auto-format = false
+language-servers = [
+  "angular",
+  "vscode-html-language-server",
+]
