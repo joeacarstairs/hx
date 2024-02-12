@@ -38,6 +38,10 @@ language-servers = [
 auto-format = false
 
 [[language]]
+name = "markdown"
+roots = [".marksman.toml", "."]
+
+[[language]]
 name = "toml"
 formatter = { command = "taplo", args = [ "fmt", "-" ] }
 
