@@ -10,9 +10,10 @@ S-C-ret = "open_above"
 
 [keys.normal]
 esc = ["collapse_selection", "keep_primary_selection"]
-H = ["select_mode", "goto_line_start", "normal_mode"] # see also keys.select.H
-L = ["select_mode", "goto_line_end", "normal_mode"] # see also keys.select.L
+H = ["collapse_selection", "select_mode", "goto_line_start", "normal_mode"] # see also keys.select.H
+L = ["collapse_selection", "select_mode", "goto_line_end", "normal_mode"] # see also keys.select.L
 D = [
+  "collapse_selection",
   "select_mode",
   "goto_line_end",
   "normal_mode",
