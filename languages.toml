@@ -40,6 +40,7 @@ language-servers = [
 auto-format = false
 
 [[language]]
+# sudo snap install marksman
 name = "markdown"
 roots = [".marksman.toml", "."]
 
