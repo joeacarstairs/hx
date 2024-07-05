@@ -44,6 +44,11 @@ formatter = { command = "dprint", args = ["fmt", "--stdin", "**/*.md"] }
 auto-format = true
 
 [[language]]
+name = "python"
+indent = { tab-width = 4, unit = "    " }
+text-width = 120
+
+[[language]]
 name = "toml"
 formatter = { command = "taplo", args = [ "fmt", "-" ] }
 
