@@ -35,11 +35,11 @@ args = ["lsp-proxy"]
 [[language]]
 name = "astro"
 language-servers = [ "astro" ]
-auto-format = false
+auto-format = true
 
 [[language]]
 name = "css"
-auto-format = false
+auto-format = true
 
 [[language]]
 name = "javascript"
@@ -47,7 +47,7 @@ language-servers = [
   { name = "typescript-language-server", except-features = [ "format" ] },
   "biome",
 ]
-auto-format = false
+auto-format = true
 
 [[language]]
 # sudo snap install marksman
@@ -76,11 +76,11 @@ language-servers = [
   "biome",
   { name = "typescript-language-server", except-features = [ "format" ] },
 ]
-auto-format = false
+auto-format = true
 
 [[language]]
 name = "tsx"
-auto-format = false
+auto-format = true
 language-servers = [
   "biome",
   { name = "typescript-language-server", except-features = [ "format" ] },
@@ -88,7 +88,7 @@ language-servers = [
 
 [[language]]
 name = "jsx"
-auto-format = false
+auto-format = true
 language-servers = [
   "biome",
   { name = "typescript-language-server", except-features = [ "format" ] },
