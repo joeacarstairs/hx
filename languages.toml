@@ -32,6 +32,12 @@ args = ["lsp-proxy"]
 # command = "vscode-eslint-language-server"
 # args = ["--stdio"]
 
+# Installation instructions for jdtls:
+# https://github.com/eclipse/eclipse.jdt.ls
+# Make sure that the jdtls folder is writeable, on your PATH and assigned to
+# the JDTLS_HOME env var. Default config should be fine
+# [language-server.java]
+
 [[language]]
 name = "astro"
 language-servers = [ "astro" ]
