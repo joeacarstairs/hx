@@ -19,6 +19,15 @@ args = [ "--stdio" ]
 typescript = { tsdk = "C:/Program Files/nodejs/node_modules/typescript/lib" }
 environment = "node" 
 
+# Globally:
+#  - npm install --global @biomejs/biome
+# Per project:
+#  - (recommended) npm install --save-dev --save-exact @biomejs/biome
+#  - biome init
+[language-server.biome]
+command = "biome"
+args = ["lsp-proxy"]
+
 # [language-server.eslint]
 # command = "vscode-eslint-language-server"
 # args = ["--stdio"]
