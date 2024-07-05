@@ -13,6 +13,8 @@ command = "astro-ls"
 args = [ "--stdio" ]
 
 [language-server.astro.config]
+# tsdk is a bit of a wrangle. Best solution is to create a .helix/languages.toml
+# in your particular project, `npm i typescript`, and set it to node_modules/typescript/lib
 typescript = { tsdk = "C:/Program Files/nodejs/node_modules/typescript/lib" }
 environment = "node" 
 
@@ -38,6 +40,7 @@ language-servers = [
 auto-format = false
 
 [[language]]
+# sudo snap install marksman
 name = "markdown"
 roots = [".marksman.toml", "dprint.json", ".dprint.json", "."]
 formatter = { command = "dprint", args = ["fmt", "--stdin", "**/*.md"] }
