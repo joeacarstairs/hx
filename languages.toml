@@ -39,7 +39,8 @@ auto-format = false
 
 [[language]]
 name = "markdown"
-roots = [".marksman.toml", "."]
+roots = [".marksman.toml", "dprint.json", ".dprint.json", "."]
+formatter = { command = "dprint", args = ["fmt", "--stdin", "**/*.md"] }
 
 [[language]]
 name = "toml"
