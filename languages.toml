@@ -1,8 +1,9 @@
+# npm install -g @angular/cli @angular/language-service typescript @angular/language-server
 [language-server.angular]
 command = "ngserver"
 args = [
   "--tsProbeLocations",
-  "$(node -g root)",
+  "$(npm -g root)",
   "--ngProbeLocations",
   "C:/Program Files/nodejs/node_modules",
   "--stdio",
