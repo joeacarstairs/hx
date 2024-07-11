@@ -21,6 +21,7 @@ D = [
   "delete_selection",
   "normal_mode",
 ] # see also keys.select.D
+S-ret = ":reflow" # see also keys.select.S-ret
 
 [keys.select]
 H = "goto_line_start" # see also keys.normal.H
@@ -33,7 +34,7 @@ D = [
   "goto_line_end",
   "delete_selection",
 ] # see also keys.normal.D
-S-ret = ":reflow"
+S-ret = ":reflow" # see also keys.normal.S-ret
 
 [editor.cursor-shape]
 insert = "bar"
