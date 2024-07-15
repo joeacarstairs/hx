@@ -21,6 +21,7 @@ D = [
   "delete_selection",
   "normal_mode",
 ] # see also keys.select.D
+ret = ":format" # see also keys.select.ret
 S-ret = ":reflow" # see also keys.select.S-ret
 
 [keys.select]
@@ -34,6 +35,7 @@ D = [
   "goto_line_end",
   "delete_selection",
 ] # see also keys.normal.D
+ret = ":format" # see also keys.normal.ret
 S-ret = ":reflow" # see also keys.normal.S-ret
 
 [editor.cursor-shape]
