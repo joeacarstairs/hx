@@ -9,6 +9,7 @@ args = [
   "--stdio",
 ]
 
+# npm install --global @astrojs/language-server
 [language-server.astro]
 command = "astro-ls"
 args = [ "--stdio" ]
